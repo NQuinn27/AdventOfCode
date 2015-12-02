@@ -1,5 +1,4 @@
-total_paper_needed = 0
-total_ribbon_needed = 0
+total_paper_needed = total_ribbon_needed = 0
 File.readlines('input.txt').each do |line|
     components = line.split("x")
     l = components[0].to_i
