@@ -19,5 +19,5 @@ File.open('input.txt','r') do |f|
     end
     switch = !switch
   end
-  puts "#{hash.length}"
+  puts "Houses hit: #{hash.length}"
 end

@@ -9,5 +9,5 @@ File.open('input.txt','r') do |f|
      if c == 'v' then current_y -= 1 end
     hash["#{current_x},#{current_y}"] = "visited"
   end
-  puts "#{hash.length}"
+  puts "Houses hit: #{hash.length}"
 end
