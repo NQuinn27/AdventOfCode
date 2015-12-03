@@ -1,8 +1,5 @@
 File.open('input.txt','r') do |f|
-  santa_x = 0
-  santa_y = 0
-  robo_x = 0
-  robo_y = 0
+  santa_x = santa_y = robo_x = robo_y = 0
   hash = Hash.new
   hash["#{0},#{0}"] = "visited"
   switch = true
