@@ -32,5 +32,5 @@ perms.each do |perm|
     longest_distance = distance
   end
 end
-puts "Shortest: #{min_distance}"
+puts "Shortest: #{shortest_distance}"
 puts "Longest: #{longest_distance}"
