@@ -12,7 +12,7 @@ end
 places = names.keys
 perms = places.permutation.to_a
 
-shortest_distance = 999999999
+shortest_distance = 9999
 longest_distance = 0
 
 perms.each do |perm|
