@@ -5,8 +5,10 @@ File.readlines("input.txt").each do |line|
   d1 = parts[0]
   d2 = parts[2]
   distance = parts[4].to_i
-  destinations["#{d1}:#{d2}"] = destinations["#{d2}:#{d1}"] = distance
-  names[d1] = names[d2] = ""
+  destinations["#{d1}:#{d2}"] = distance
+  destinations["#{d2}:#{d1}"] = distance
+  names[d1] = ""
+  names[d2] = ""
 end
 
 places = names.keys
