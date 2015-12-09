@@ -1,15 +1,12 @@
 destinations = Hash.new()
 names = Hash.new()
 File.readlines("input.txt").each do |line|
-  s1 = line.split("to")
-  s2 = s1[1].split("=")
-  d1 = s1[0].strip
-  d2 = s2[0].strip
-  distance = s2[1].strip.to_i
-  destinations["#{d1}:#{d2}"] = distance
-  destinations["#{d2}:#{d1}"] = distance
-  names[d1] = ""
-  names[d2] = ""
+  parts = line.split(" ")
+  d1 = parts[0]
+  d2 = parts[2]
+  distance = parts[4].to_i
+  destinations["#{d1}:#{d2}"] = destinations["#{d2}:#{d1}"] = distance
+  names[d1] = names[d2] = ""
 end
 
 places = names.keys
