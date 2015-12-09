@@ -11,7 +11,7 @@ File.readlines("input.txt").each do |line|
   names[d1] = ""
   names[d2] = ""
 end
-#names is all of the destinations
+
 places = names.keys
 perms = places.permutation.to_a
 
