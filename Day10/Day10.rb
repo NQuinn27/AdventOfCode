@@ -1,4 +1,5 @@
-def look_say(n)
+input = "3113322113"
+def look_say_slow(n)
   last_char = n[0]
   count = 1;
   new_output = ""
@@ -13,9 +14,12 @@ def look_say(n)
   end
   return new_output
 end
-input = "3113322113"
+
+def look_say_faster(n)
+  
+end
+
 for i in 1..50 do
-  puts "#{i}"
   input = look_say(input)
 end
 puts input.length
