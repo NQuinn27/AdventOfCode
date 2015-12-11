@@ -1,5 +1,5 @@
 input = "3113322113"
-def look_say_slow(n)
+def look_say(n)
   last_char = n[0]
   count = 1;
   new_output = ""
@@ -13,10 +13,6 @@ def look_say_slow(n)
     end
   end
   return new_output
-end
-
-def look_say_faster(n)
-  
 end
 
 for i in 1..50 do

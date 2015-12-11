@@ -3,8 +3,7 @@ def is_valid(s)
   pairs = []
   skip = false
   for i in 0..s.length
-    c = s[i]
-    case c
+    case s[i]
     when 'i'
       return false
     when 'o'
@@ -57,10 +56,10 @@ end
 input = "vzbxxyzz"
 while true
   input = increment_string(input)
+  puts input
   if is_valid(input)
     puts "valid: #{input}"
     break
   end
-  puts input
 end
 puts input
